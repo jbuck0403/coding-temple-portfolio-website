@@ -1,0 +1,98 @@
+:root {
+  --links-font-size: 5vh;
+  --links-hover-font-size: 8vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, black, rgba(119, 117, 117, 0.825));
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 20px;
+  position: relative;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+
+/* Style navigation links */
+.navigation {
+  list-style: none;
+  text-align: left;
+  font-weight: bold;
+  font-size: var(--links-font-size);
+  text-transform: lowercase;
+  position: absolute;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 20px;
+}
+
+.navigation a:hover {
+  text-transform: uppercase;
+  font-size: var(--links-hover-font-size);
+  transition: all 0.08s;
+}
+
+.header {
+  font-size: 3em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 5%;
+  left: 42%;
+  display: flex;
+  text-decoration: none;
+  cursor: default;
+}
+
+#last-name::before {
+  content: "\00a0";
+}
+
+.name:hover {
+  text-transform: lowercase;
+  color: purple;
+}
+
+.description {
+  width: 550px;
+}
+
+.personal-details-container {
+  position: relative;
+  padding-top: 230px;
+  display: inline-block;
+}
+
+.personal-details {
+  position: absolute;
+  word-spacing: 5px;
+  line-height: 30px;
+  text-indent: 1vw;
+}
+
+#contact::before {
+  text-decoration: none;
+  font-size: 0.5em;
+  content: "email";
+}
+
+#contact:hover::before {
+  color: purple;
+  text-decoration: underline;
+  content: "jbuck0403@gmail.com";
+  text-shadow: 2px 2px 4px black;
+}
+
+.nested-list {
+  list-style-position: inside;
+}
+
+.nested-nested-list {
+  list-style-position: inside;
+  padding-left: 30px;
+}
