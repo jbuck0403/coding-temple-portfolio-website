@@ -1,6 +1,6 @@
 :root {
-  --links-font-size: 5vh;
-  --links-hover-font-size: 8vh;
+  --links-font-size: 60px;
+  --links-hover-font-size: 1.5em;
   --shadow-color: rgba(154, 152, 155, 0.638);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
